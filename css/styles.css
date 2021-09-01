@@ -692,34 +692,47 @@ img {
  }
 
  .working-text-hover {
+    width:100%;
+    height:100%;
+    display: inline-block;
+    position: absolute;
+    content: "";
+    justify-content: center;
+    top: 0;
+    opacity: 0;
+    padding: 24px;
     
     font-size: 18px;
-    line-height: 1.56px;
+    line-height: 1.56;
     letter-spacing: 0.03em;
+    color: #fff;
+    display: flex;
+    align-items: center;
    
  }
 
- .working-text-box {
+ /* .working-text-box {
      width:100%;
      height:100%;
      display: inline-block;
      position: absolute;
-     color: teal;
+     content: "";
      justify-content: center;
      text-align: center;
      top: 0;
-     /* opacity: 0; */
+     opacity: 0;
+  */
  
- }
- 
- .working-text-box:hover::after {
-    opacity: 1;
- }
-
- .working-img-box:hover::before {
+ .working-item:hover .working-img-box::before {
 
     opacity: 1;
  }
+ 
+ .working-item:hover .working-text-hover {
+     opacity: 1;
+ }
+ 
+
  
 
  .working-item:hover,
