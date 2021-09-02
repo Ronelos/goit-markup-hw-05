@@ -72,7 +72,7 @@
           <h1 class="hero-title">
             Эффективные решения <br />для вашего бизнеса
           </h1>
-          <button class="hero-button button-cursor" type="button">
+          <button class="hero-button button-cursor" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -445,5 +445,12 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="modal-button" data-modal-close><svg class="buttom-close"><use href="./images/svg/close-buttom.svg"></use></svg> </button>
+      </div>
+
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
